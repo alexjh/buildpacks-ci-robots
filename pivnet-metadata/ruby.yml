@@ -1,1 +1,73 @@
 ---
+release:
+  version: Ruby 1.6.36
+  release_type: Minor Release
+  eula_slug: pivotal_software_eula
+  release_notes_url: https://github.com/cloudfoundry/ruby-buildpack/releases/tag/v1.6.36
+  availability: All Users
+  eccn: 5D002
+  license_exception: TSU
+product_files:
+- file: pivotal-buildpack-cached/ruby_buildpack-cached-v0.0.0.zip
+  upload_as: Ruby Buildpack (offline)
+  description: |
+    * Add ruby 2.4.1
+      (https://www.pivotaltracker.com/story/show/142155613)
+
+    * Add node 4.8.1, remove node 4.8.0
+      (https://www.pivotaltracker.com/story/show/142185261)
+
+    * Add jruby 9.1.8.0, remove jruby 9.1.7.0
+      (https://www.pivotaltracker.com/story/show/141046145)
+
+    * Add bundler 1.14.6, remove bundler 1.14.5
+      (https://www.pivotaltracker.com/story/show/141055921)
+
+    * Fail staging if unable to write .profile.d script
+      (https://www.pivotaltracker.com/story/show/141616657)
+
+    * Buildpack can use dependencies provided by supply scripts
+      (https://www.pivotaltracker.com/story/show/141616657)
+
+    * Use nodejs 6.x for rails 5.1 and above, continue using nodejs 4.x for other execjs apps
+      - Make When node is required install npm as well
+      - Add node 6.10.1
+      (https://www.pivotaltracker.com/story/show/141167599)
+      (https://www.pivotaltracker.com/story/show/141165751)
+      (https://www.pivotaltracker.com/story/show/142185261)
+
+    * Use pessimistic locking on Ruby version in Gemfile
+      - Change ruby version warning to include pessimistic versioning suggestion
+      (https://www.pivotaltracker.com/story/show/140770891)
+      (https://www.pivotaltracker.com/story/show/141518629)
+
+    * Changes behaviour of ruby version download by setting jruby patchlevel to be not significant
+      (https://www.pivotaltracker.com/story/show/140663631)
+
+
+    Packaged binaries:
+
+    | name              | version                  | cf_stacks  |
+    |-------------------|--------------------------|------------|
+    | ruby              | 2.1.8                    | cflinuxfs2 |
+    | ruby              | 2.1.9                    | cflinuxfs2 |
+    | ruby              | 2.2.5                    | cflinuxfs2 |
+    | ruby              | 2.2.6                    | cflinuxfs2 |
+    | ruby              | 2.3.2                    | cflinuxfs2 |
+    | ruby              | 2.3.3                    | cflinuxfs2 |
+    | ruby              | 2.4.0                    | cflinuxfs2 |
+    | ruby              | 2.4.1                    | cflinuxfs2 |
+    | jruby             | ruby-1.9.3-jruby-1.7.26  | cflinuxfs2 |
+    | jruby             | ruby-2.0.0-jruby-1.7.26  | cflinuxfs2 |
+    | jruby             | ruby-2.3.1-jruby-9.1.8.0 | cflinuxfs2 |
+    | node              | 4.8.1                    | cflinuxfs2 |
+    | node              | 6.10.1                   | cflinuxfs2 |
+    | bundler           | 1.14.6                   | cflinuxfs2 |
+    | openjdk1.8-latest | 1.8.0_121                | cflinuxfs2 |
+    | yarn              | 0.21.3                   | cflinuxfs2 |
+
+    Default binary versions:
+
+    | name | version |
+    |------|---------|
+    | ruby | 2.3.3   |
