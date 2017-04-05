@@ -1,1 +1,57 @@
 ---
+release:
+  version: NodeJS 1.5.31
+  release_type: Minor Release
+  eula_slug: pivotal_software_eula
+  release_notes_url: https://github.com/cloudfoundry/nodejs-buildpack/releases/tag/v1.5.31
+  availability: All Users
+  eccn: 5D002
+  license_exception: TSU
+product_files:
+- file: pivotal-buildpack-cached/nodejs_buildpack-cached-v1.5.31+1491426279.zip
+  upload_as: NodeJS Buildpack (offline)
+  description: |-
+    * Add node 4.8.1, Remove node 4.7.3
+      - Set Node 4.8.1 as the default
+      (https://www.pivotaltracker.com/story/show/142185261)
+
+    * Add node 6.10.1, remove node 6.9.5
+      (https://www.pivotaltracker.com/story/show/142185261)
+
+    * Add node 7.7.3, remove node 7.5.0
+      (https://www.pivotaltracker.com/story/show/141738953)
+
+    * Add node 7.7.4, Remove node 7.6.0
+      (https://www.pivotaltracker.com/story/show/142188245)
+      (https://www.pivotaltracker.com/story/show/141360971)
+
+    * Add yarn 0.22.0, remove yarn 0.21.2
+      (https://www.pivotaltracker.com/story/show/141155101)
+      (https://www.pivotaltracker.com/story/show/140681333)
+
+    * Add support for supply buildpacks
+      (https://www.pivotaltracker.com/story/show/141616657)
+
+    * Use pessimistic locking on ruby version in Gemfile
+      (https://www.pivotaltracker.com/story/show/140770891)
+
+
+    Packaged binaries:
+
+    | name | version | cf_stacks  |
+    |------|---------|------------|
+    | node | 4.8.0   | cflinuxfs2 |
+    | node | 4.8.1   | cflinuxfs2 |
+    | node | 6.10.0  | cflinuxfs2 |
+    | node | 6.10.1  | cflinuxfs2 |
+    | node | 7.7.3   | cflinuxfs2 |
+    | node | 7.7.4   | cflinuxfs2 |
+    | yarn | 0.22.0  | cflinuxfs2 |
+
+    Default binary versions:
+
+    | name | version |
+    |------|---------|
+    | node | 4.8.1   |
+    | yarn | 0.22.0  |
+      * SHA256: b06b124ffd92785ab8a6834f8256b82b9556f24854357e4372695627910c2881
