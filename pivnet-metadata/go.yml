@@ -1,1 +1,44 @@
 ---
+release:
+  version: Go 1.7.20
+  release_type: Minor Release
+  eula_slug: pivotal_software_eula
+  release_notes_url: https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.7.20
+  availability: All Users
+  eccn: 5D002
+  license_exception: TSU
+product_files:
+- file: pivotal-buildpack-cached/go_buildpack-cached-v1.7.20+1491423445.zip
+  upload_as: Go Buildpack (offline)
+  description: |-
+    * Add go1.8.0
+      (https://www.pivotaltracker.com/story/show/140085065)
+
+    * Remove go 1.5 support
+      (https://www.pivotaltracker.com/story/show/137306167)
+
+    * Add godep v79, remove godep v78
+      (https://www.pivotaltracker.com/story/show/138883943)
+
+    * Add EOL dates for go
+      (https://www.pivotaltracker.com/story/show/137374307)
+
+
+    Packaged binaries:
+
+    | name  | version | cf_stacks  |
+    |-------|---------|------------|
+    | go    | 1.6.3   | cflinuxfs2 |
+    | go    | 1.6.4   | cflinuxfs2 |
+    | go    | 1.7.4   | cflinuxfs2 |
+    | go    | 1.7.5   | cflinuxfs2 |
+    | go    | 1.8.0   | cflinuxfs2 |
+    | glide | v0.12.3 | cflinuxfs2 |
+    | godep | v79     | cflinuxfs2 |
+
+    Default binary versions:
+
+    | name | version |
+    |------|---------|
+    | go   | 1.7.5   |
+      * SHA256: 957d5029677adc6abb2ebdee8cf12e49fa125d096a447c08790f4c3e633e4a97
