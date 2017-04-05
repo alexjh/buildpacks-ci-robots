@@ -1,1 +1,31 @@
 ---
+release:
+  version: Binary 1.0.11
+  release_type: Minor Release
+  eula_slug: pivotal_software_eula
+  release_notes_url: https://github.com/cloudfoundry/binary-buildpack/releases/tag/v1.0.11
+  availability: All Users
+  eccn: 5D002
+  license_exception: TSU
+product_files:
+- file: pivotal-buildpack-cached/binary_buildpack-cached-v1.0.11+1491431494.zip
+  upload_as: Binary Buildpack (offline)
+  description: |-
+    * Run compile.ps1 with Unrestricted execution policy
+      (https://www.pivotaltracker.com/story/show/142141879)
+
+    * Add hooks for eventual multiple buildpack compatibility
+      note: only implemented for Linux, not Windows
+      (https://www.pivotaltracker.com/story/show/141616657)
+
+
+    Packaged binaries:
+
+    | name | version | cf_stacks |
+    |------|---------|-----------|
+
+    Default binary versions:
+
+    | name | version |
+    |------|---------|
+      * SHA256: f18b859cd8baa271418ac1cd8892240732c4dfc77782a4da8ddc677cdffc270c
