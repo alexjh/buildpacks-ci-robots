@@ -1,1 +1,41 @@
 ---
+release:
+  version: ".NET Core 1.0.15"
+  release_type: Minor Release
+  eula_slug: pivotal_software_eula
+  release_notes_url: https://github.com/cloudfoundry/dotnet-core-buildpack/releases/tag/v1.0.15
+  availability: All Users
+product_files:
+- file: pivotal-buildpack-cached/dotnet-core_buildpack-cached-v1.0.15+1491510803.zip
+  upload_as: ".NET Core Buildpack (offline)"
+  description: |-
+    * Use ASPNETCORE_URLS instead of command line arguments
+      (https://www.pivotaltracker.com/story/show/142635287)
+
+
+    Packaged binaries:
+
+    | name             | version                 | cf_stacks  |
+    |------------------|-------------------------|------------|
+    | node             | 6.10.1                  | cflinuxfs2 |
+    | bower            | 1.8.0                   | cflinuxfs2 |
+    | dotnet           | 1.0.0-preview2-003156   | cflinuxfs2 |
+    | dotnet           | 1.0.0-preview2-1-003177 | cflinuxfs2 |
+    | dotnet           | 1.0.0-preview4-004233   | cflinuxfs2 |
+    | dotnet           | 1.0.1                   | cflinuxfs2 |
+    | dotnet-framework | 1.0.0                   | cflinuxfs2 |
+    | dotnet-framework | 1.0.1                   | cflinuxfs2 |
+    | dotnet-framework | 1.0.3                   | cflinuxfs2 |
+    | dotnet-framework | 1.0.4                   | cflinuxfs2 |
+    | dotnet-framework | 1.1.0                   | cflinuxfs2 |
+    | dotnet-framework | 1.1.1                   | cflinuxfs2 |
+    | libunwind        | 1.2                     | cflinuxfs2 |
+
+    Default binary versions:
+
+    | name   | version |
+    |--------|---------|
+    | node   | 6.10.1  |
+    | bower  | 1.8.0   |
+    | dotnet | 1.0.1   |
+      * SHA256: b0686dc3409ce4fa436d05a0d69539dbd30af3d75ba15f278b443775e57db84f
